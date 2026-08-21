@@ -8,7 +8,6 @@ mtcars = pd.read_csv(url, index_col=0)
 feature_names = ['mpg', 'cyl', 'disp', 'hp', 'drat', 'wt', 'qsec']
 X = mtcars[feature_names].values
 
-
 def pca_funk(X, standardize):
     if standardize:
         means = np.mean(X, axis=0)
